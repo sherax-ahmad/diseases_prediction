@@ -1,2 +1,68 @@
-# diseases_prediction
-A full repository to predict different disease 
+# Multi-Disease Prediction Using Machine Learning
+
+This repository contains three machine learning projects focused on predicting different clinical conditions using patient health data. The goal of these tasks is to apply data preprocessing, feature engineering, and model training to build predictive systems that can support healthcare decision-making.
+
+Each task is organized in its own folder and includes data, code, and project notes.
+
+## Project Tasks Included
+
+| Task Folder | Disease Prediction Task | Description | Example Methods |
+|------------|------------------------|-------------|----------------|
+| task1 | Alzheimer's Disease Prediction | Predicts cognitive decline / disease stage based on clinical and demographic features. | Logistic Regression, Random Forest, XGBoost |
+| task2 | Heart Failure Prediction | Predicts whether a patient is at risk of developing heart failure. | SVM, Gradient Boosting, Neural Networks |
+| task3 | Hospital Mortality Prediction (ICU Patients) | Predicts mortality risk during ICU stay using ICU clinical data. | L1-Regularized Logistic Regression, XGBoost, Deep Learning |
+
+## Folder Structure
+
+```
+├── task1/
+│   ├── data/
+│   ├── main.py
+│   └── Alzheimer.docs
+│
+├── task2/
+│   ├── data/
+│   ├── main.py
+│   └── HeartFailure.docs
+│
+├── task3/
+│   ├── data/
+│   ├── main.py
+│   └── ICU_Mortality.docs
+│
+└── README.readme
+```
+
+## How to Run
+
+1. Clone the repository:
+```
+git clone https://github.com/yourusername/multi-disease-prediction.git
+cd multi-disease-prediction
+```
+
+2. Install required packages:
+```
+pip install -r requirements.txt
+```
+
+3. Run a task:
+```
+cd task1
+python main.py
+```
+
+## Datasets Used
+
+| Task | Data Type | Notes |
+|------|-----------|-------|
+| Alzheimer's Prediction | Clinical + cognitive assessment data | May be sourced from ADNI-like datasets. |
+| Heart Failure Prediction | Clinical history & lab indicators | Compatible with public datasets such as UCI Heart Failure dataset. |
+| ICU Mortality Prediction | ICU admission + vital signs data | Often based on datasets like MIMIC-III (requires access approval). |
+
+## Author
+Sheraz Ahmad  
+MSc Bioinformatics
+
+## License
+MIT License
